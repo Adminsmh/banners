@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="renderer" content="webkit" />
+    <title></title>
+    <link href="https://www.sammh.com/css/reset.css" rel="stylesheet" />
+    <script src="js/jquery.js"></script>
+    <style>
+        #smh_banner {
+            overflow:hidden;
+            margin:0px auto;
+            position:relative;
+        }
+        #smh_banner ul {
+            overflow:hidden;
+            margin:0px auto;
+            position:relative;
+        }
+        #smh_banner ul li{
+            float:left;
+        }
+        .pagination{
+            margin:0px auto;
+            position:absolute;
+            top:90%;
+            z-index:999;
+        }
+        .pagination span{
+            cursor:pointer;
+            width:10px;
+            height:10px;
+            background:#ccc;
+            border-radius:50%;
+            display:inline-block;
+            margin-right:5px;
+        }
+        .pagination span:last-child{
+            margin-right:0px;
+        }
+        .active{
+            background:#4C70B1 !important;
+        }
+    </style>
+</head>
+<body>
+    <div id="smh_banner">
+        <ul>
+            <li><a href=""><img src="http://www.hylslf.com/upfile/984132078273626534109.jpg"></a></li>
+            <li><a href=""><img src="http://www.hylslf.com/upfile/630132078271826279435.png"></a></li>
+            <li><a href=""><img src="http://www.hylslf.com/upfile/984132078273626534109.jpg"></a></li>
+            <li><a href=""><img src="http://www.hylslf.com/upfile/630132078271826279435.png"></a></li>
+        </ul>
+        <div class="pagination"></div>
+    </div>
+    <script src="js/Banner.min.js"></script>
+    <script type="text/javascript">
+        var parm = { time: 5000 };//图片切换间隔时间
+        inits(parm);//调用函数
+    </script>
+</body>
+</html>
